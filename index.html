@@ -68,6 +68,10 @@ a{color:inherit}
 .beat p{max-width:30rem;font-size:1.06rem}
 .beat p+p{margin-top:1rem}
 .lead{font-weight:700;font-size:clamp(1.18rem,4.2vw,1.42rem)!important;line-height:1.5}
+.beat.aviso{text-align:center;padding-top:20px;padding-bottom:12px}
+.aviso-mark{width:38px;height:38px;margin:0 auto 16px;display:block;filter:drop-shadow(0 0 12px rgba(255,182,39,.5))}
+.aviso-txt{font-weight:800;font-style:italic;font-size:1.18rem;line-height:1.5;letter-spacing:.01em;max-width:20rem;margin:0 auto;position:relative;padding-bottom:18px}
+.aviso-txt::after{content:'';position:absolute;left:50%;bottom:0;width:52px;height:2px;background:var(--flor-lux);border-radius:2px;transform:translateX(-50%)}
 .lead b{font-weight:900;color:var(--flor-lux)}
 
 .noche-l{list-style:none;margin:1.4rem 0 0;padding:0;max-width:30rem}
@@ -203,14 +207,9 @@ a{color:inherit}
       </a>
     </section>
 
-    <section class="beat">
-      <h2>Tres días de Asamblea General</h2>
-      <p>La Cena de Gala cierra la primera jornada de la Asamblea, que la UNAM recibe del 28 al 30 de octubre.</p>
-      <ul class="dias">
-        <li class="hoy"><strong>Miércoles 28</strong><span>Torre de Ingeniería, Ciudad Universitaria. Aquí se celebra la Cena de Gala.</span></li>
-        <li><strong>Jueves 29</strong><span>Museo Universitario de Ciencias y Arte, Ciudad Universitaria</span></li>
-        <li><strong>Viernes 30</strong><span>Palacio de Minería, Centro Histórico</span></li>
-      </ul>
+    <section class="beat aviso">
+      <svg class="aviso-mark" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#mg" x="-50" y="-50" width="100" height="100"/></svg>
+      <p class="aviso-txt">La presente invitación es<br>personal e intransferible</p>
     </section>
   </div>
 
